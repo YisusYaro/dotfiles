@@ -4,8 +4,9 @@ My personal dotfiles for GNU/Linux systems
 
 <img src="ss.png">
 
-
 ------
+
+### Requirements 📦
 
 | | |
 |-|-|
@@ -17,6 +18,12 @@ My personal dotfiles for GNU/Linux systems
 | **Browser:** | <a href="https://www.mozilla.org/es-MX/firefox/new/"><img height="30px" src="http://1000marcas.net/wp-content/uploads/2020/01/logo-Mozilla-Firefox.png"></a> |
 
 -----
+  
+### Symbolic link example  🔗
+  
+```
+ln -sf ~/dotfiles/.xinitrc ~/.xinitrc
+```
 
 
 
