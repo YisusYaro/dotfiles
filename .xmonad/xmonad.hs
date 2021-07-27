@@ -8,7 +8,7 @@ myLayouts = smartSpacing 4 $ smartBorders ( Tall 1 (3/100) (1/2) ) ||| smartBord
 
 
 myKeys :: [(String, X ())]
-myKeys = 
+myKeys =
     [
 
     --------------------- Hardware ---------------------
@@ -20,7 +20,12 @@ myKeys =
 
     -- Brightness
     ("<XF86MonBrightnessUp>", spawn "brightnessctl set +10%"),
-    ("<XF86MonBrightnessDown>", spawn "brightnessctl set 10%-")
+    ("<XF86MonBrightnessDown>", spawn "brightnessctl set 10%-"),
+    
+    --------------- Open Project Vscode ----------------
+   
+    ("M-v", spawn "~/.scripts/openProjectCode.sh")
+
     ]
 
 main = xmonad $ def
@@ -32,4 +37,3 @@ main = xmonad $ def
     focusedBorderColor = "#c792ea",
     layoutHook = myLayouts
     }`additionalKeysP` myKeys
-
